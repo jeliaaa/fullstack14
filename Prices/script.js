@@ -1,4 +1,3 @@
-function flipCard(card){
+function toggleFlip(card){
     $(card).toggleClass('flipped');
-    
 }

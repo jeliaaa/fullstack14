@@ -1,0 +1,14 @@
+.pricer{
+    width: 100%;
+    border-collapse: collapse;    
+}
+.price-td{
+    border: 1px solid darkviolet;
+    padding: 8px;
+    padding-top: 12px;
+    text-align: center;
+}
+.pricer tr:nth-child(even){
+    background-color: #222;
+    color: white;
+} 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        footer, header{
+            background-color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Hello World! 
+    </header>
+
+    <main>
+        <section id="content-flip">
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 | All rights reseved | Powered by XXX</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url:"index.html",
+                success: function(data){
+                    $('#content-flip').html(data);
+                },
+                error: function(){
+                    $('#content-flip').html('<p>Error has occured</p>');
+                }
+            })
+        })
+    </script>
+</body>
+</html>
